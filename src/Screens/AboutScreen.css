@@ -1,0 +1,207 @@
+.about__screen {
+  width: 100%;
+  min-height: 100vh;
+  padding: 130px 60px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.about__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.left__content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.left__content > h2 {
+  font-family: "PT Serif";
+  font-size: 30px;
+
+  color: #ff8400;
+}
+
+.left__disc {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.left__disc > p {
+  font-family: "Cardo";
+  font-size: 20px;
+  color: #494545;
+}
+
+.left__disc > p > span {
+  font-family: "PT Serif";
+
+  font-weight: 600;
+  color: #494545;
+  letter-spacing: 1.1px;
+}
+
+.linkedin {
+  color: #ff8400 !important;
+  cursor: pointer;
+  border-bottom: 3px solid #ff8400;
+  transition: all 100ms ease;
+}
+
+.linkedin:hover {
+  color: #0b28aa !important;
+  border-bottom: 3px solid #0b28aa;
+}
+
+.left__content > button {
+  padding: 10px 20px;
+  background-color: #ff8400;
+  color: rgb(255, 217, 61);
+  font-size: 23px;
+  font-weight: 600;
+  font-family: "PT Serif";
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 100ms ease;
+  width: 30%;
+  letter-spacing: 1.3px;
+  align-self: center;
+}
+
+.left__content > button:hover {
+  background-color: rgb(242, 190, 34);
+  color: #111;
+}
+
+.right__content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.right__content > h2 {
+  font-family: "PT Serif";
+  font-size: 35px;
+  color: #ff8400;
+}
+
+.right__skills {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+}
+
+.right__skills > span {
+  padding: 15px;
+  color: #ff8400;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+.right__skills > span > h5 {
+  font-size: 19px;
+  color: #494545;
+  font-family: "Cardo";
+}
+
+@media (max-width: 1365px) {
+  .about__screen {
+    align-items: center;
+  }
+
+  .about__content {
+    align-items: center;
+  }
+
+  .left__content {
+    width: 100%;
+  }
+
+  .right__content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1030px) {
+  .right__skills {
+    gap: 20px;
+  }
+
+  .right__skills > span {
+    padding: 12px;
+
+    font-size: 38px;
+  }
+
+  .right__skills > span > h5 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 860px) {
+  .about__screen {
+    padding: 130px 30px 80px;
+
+    gap: 40px;
+  }
+
+  .about__content {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .left__content > h2 {
+    font-size: 27px;
+  }
+
+  .left__disc {
+    gap: 12px;
+  }
+
+  .left__disc > p {
+    font-size: 18px;
+  }
+
+  .left__content > button {
+    padding: 8px 16px;
+
+    font-size: 20px;
+  }
+
+  .right__content > h2 {
+    font-size: 31px;
+  }
+}
+
+@media (max-width: 650px) {
+  .left__content > button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .about__screen {
+    padding: 250px 60px 80px;
+  }
+}

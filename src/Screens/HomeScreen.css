@@ -1,0 +1,140 @@
+.home__screen {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+
+.home__left {
+  width: 68%;
+  min-height: 100vh;
+
+  background-color: #ffd93d;
+}
+
+.home__right {
+  width: 32%;
+  min-height: 100vh;
+  position: relative;
+  background-color: #ff8400;
+}
+
+.image__container {
+  width: 350px;
+  position: fixed;
+  top: 50%;
+  right: 450px;
+
+  transform: translate(50%, -50%);
+  z-index: 10;
+}
+
+.image__container > img {
+  width: 100%;
+  object-fit: contain;
+
+  box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.75);
+}
+
+.back__box {
+  width: 350px;
+  height: 350px;
+  background-color: transparent;
+  border: 3px solid #fff;
+  position: fixed;
+  top: 55%;
+  right: -20px;
+
+  transform: translateY(-50%);
+  z-index: -1;
+
+  box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 1365px) {
+  .image__container {
+    width: 300px;
+    top: 75%;
+    right: 15%;
+  }
+
+  .back__box {
+    width: 300px;
+    height: 300px;
+    top: 44%;
+    right: 20px;
+  }
+}
+
+@media (max-width: 1197px) {
+  .image__container {
+    width: 240px;
+
+    right: 15%;
+  }
+
+  .back__box {
+    width: 240px;
+    height: 240px;
+
+    right: 14px;
+  }
+}
+
+@media (max-width: 865px) {
+  .image__container {
+    width: 220px;
+
+    right: 15%;
+  }
+
+  .back__box {
+    width: 220px;
+    height: 220px;
+
+    right: 10px;
+  }
+}
+
+@media (max-width: 750px) {
+  .image__container {
+    width: 180px;
+    top: 80%;
+  }
+
+  .back__box {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 660px) {
+  .image__container {
+    width: 130px;
+  }
+
+  .back__box {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media (max-width: 500px) {
+  .home__left {
+    width: 100%;
+  }
+
+  .home__right {
+    width: 0%;
+  }
+  .image__container {
+    display: none;
+  }
+
+  .back__box {
+    display: none;
+  }
+}

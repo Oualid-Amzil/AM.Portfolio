@@ -1,0 +1,170 @@
+.contact__screen {
+  width: 100%;
+  min-height: 100vh;
+  padding: 130px 60px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.success {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgba(15, 156, 64, 0.8);
+  color: #fff;
+  font-family: "PT Serif";
+  font-size: 15px;
+  text-align: center;
+  transition: all 200ms ease;
+}
+
+.error {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(163, 78, 67, 0.2);
+  color: red;
+  font-family: "PT Serif";
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+
+  transition: all 200ms ease;
+}
+
+.contact__form {
+  width: 80%;
+  z-index: 10;
+
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 40px;
+  align-items: center;
+  gap: 20px;
+  border-radius: 15px;
+  background-color: #ffd93d;
+  box-shadow: 2px 2px 14px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 2px 2px 14px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 14px 0px rgba(0, 0, 0, 0.5);
+  transition: all 500ms ease;
+}
+
+.contact__input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.contact__input > h2 {
+  font-family: "PT Serif";
+  font-weight: 600;
+  font-size: 18px;
+  color: #494545;
+}
+
+.contact__input > input {
+  padding: 12px 14px;
+  font-family: "PT Serif";
+  background-color: aliceblue;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #494545;
+}
+
+.contact__input > textarea {
+  padding: 12px 14px;
+  font-family: "PT Serif";
+
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #494545;
+}
+
+.contact__input > span {
+  font-family: "PT Serif";
+  font-size: 16px;
+  color: rgb(209, 21, 21);
+}
+
+.contact__form > button {
+  width: 100%;
+  padding: 12px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "PT Serif";
+  font-size: 17px;
+  border-radius: 5px;
+
+  background-color: #ffd93d;
+  color: #494545;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  cursor: pointer;
+  transition: all 100ms ease;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+.contact__form > button:hover {
+  background-color: #ff8400;
+  color: #fff;
+}
+
+@media (max-width: 1365px) {
+  .contact__screen {
+    align-items: center;
+  }
+
+  .contact__form {
+    align-self: center;
+  }
+}
+
+@media (max-width: 1150px) {
+  .contact__screen {
+    padding: 130px 30px 80px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contact__form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact__form {
+    padding: 20px;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact__input > h2 {
+    font-size: 16px;
+  }
+
+  .contact__input > input {
+    padding: 10px 14px;
+  }
+
+  .contact__form > button {
+    font-size: 16px;
+  }
+
+  .contact__input > textarea {
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact__screen {
+    padding: 250px 30px 80px;
+  }
+}

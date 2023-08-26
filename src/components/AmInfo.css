@@ -1,0 +1,104 @@
+.am__info {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 200px 100px;
+  position: relative;
+}
+
+.am__info > h1 {
+  font-family: "PT Serif";
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #ff8400;
+  max-width: 300px;
+}
+
+.am__info > p {
+  font-family: "PT Serif";
+  font-size: 28px;
+  color: #494545;
+  max-width: 650px;
+}
+
+.front__end {
+  font-family: "PT Serif";
+
+  font-weight: 700;
+  color: #ff8400;
+}
+
+.add__info {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.add__info > p {
+  font-family: "Cardo";
+  font-size: 18px;
+  color: #494545;
+  max-width: 300px;
+}
+
+@media (max-width: 1100px) {
+  .am__info {
+    gap: 40px;
+    padding: 200px 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .am__info > h1 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 800px) {
+  .am__info {
+    gap: 30px;
+  }
+
+  .am__info > h1 {
+    font-size: 60px;
+  }
+
+  .am__info > p {
+    font-size: 24px;
+  }
+
+  .add__info > p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .am__info {
+    gap: 20px;
+  }
+
+  .am__info > h1 {
+    font-size: 50px;
+  }
+
+  .am__info > p {
+    font-size: 22px;
+  }
+
+  .add__info > p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 560px) {
+  .am__info {
+    padding: 200px 38px;
+  }
+}
+
+@media (max-width: 500px) {
+  .am__info {
+    padding: 250px 38px;
+  }
+}
