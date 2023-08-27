@@ -25,7 +25,7 @@ const HomeScreen = () => {
       <div className="home__right">
         <div className="image__container">
           <img
-            class="animate__animated animate__pulse"
+            className="animate__animated animate__pulse"
             src={amImage}
             alt="am face"
           />

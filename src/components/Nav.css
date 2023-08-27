@@ -25,8 +25,6 @@
 
 .nav__list {
   display: flex;
-  align-items: center;
-  gap: 70px;
 }
 
 .nav__list > ul {
@@ -53,6 +51,14 @@
 .active__navlink {
   border-bottom-color: #fff !important;
   transition: all 200ms ease;
+}
+
+.showButton {
+  display: none;
+}
+
+.mobileNav__list {
+  display: none;
 }
 
 @media (max-width: 1365px) {
@@ -106,18 +112,65 @@
 }
 
 @media (max-width: 500px) {
-  .nav__logo > h1 {
-    font-size: 36px;
-    max-width: 100px;
-    line-height: 1;
+  .nav {
+    padding: 16px 20px 10px;
+  }
+
+  .nav__list {
+    display: none;
+  }
+
+  .mobileNav__list {
+    display: flex;
+  }
+
+  .mobileNav__list > ul {
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .mobileNav__list > ul > li {
+    margin-top: 20px;
+  }
+
+  .mobileNav__list > ul > li > a {
+    font-size: 19px;
+    color: #494545;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 2px;
+    transition: all 200ms ease;
+  }
+
+  .mobileNav__list ul li:hover {
+    transform: scale(1.1);
+  }
+
+  .showButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: transparent;
+    color: #494545;
+    align-self: center;
+  }
+
+  .hideButton {
+    display: flex;
+    align-items: flex-end;
+
+    font-size: 25px;
+    background-color: transparent;
+    color: #494545;
+    width: 100%;
   }
 
   .active__navlink {
     background-color: #ff8400;
-  }
-
-  .nav__list > ul > li > a {
-    color: #fff;
-    font-size: 17px;
+    color: #fff !important;
   }
 }
