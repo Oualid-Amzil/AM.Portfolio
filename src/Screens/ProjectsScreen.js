@@ -1,6 +1,9 @@
 import React from "react";
 import "./ProjectsScreen.css";
 import Label from "../components/Label";
+import ProjectsItem from "../components/ProjectsItem";
+import mvImage from "../images/Web capture_29-8-2023_103413_ra-netflix-clone.web.app.jpeg";
+import rcImage from "../images/Web capture_29-8-2023_155310_oualid-amzil.github.io.jpeg";
 
 const ProjectsScreen = () => {
   return (
@@ -10,6 +13,19 @@ const ProjectsScreen = () => {
         paragraph="Here you will find some of the personal and clients projects that I
           created"
       />
+      <div className="projects__elements">
+        <ProjectsItem
+          title="AM Movies"
+          webImage={mvImage}
+          link="https://ra-netflix-clone.web.app"
+        />
+
+        <ProjectsItem
+          title="AM Recipes"
+          webImage={rcImage}
+          link=" https://oualid-amzil.github.io/AM.Recipes/"
+        />
+      </div>
     </div>
   );
 };

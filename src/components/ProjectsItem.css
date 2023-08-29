@@ -1,0 +1,85 @@
+.project__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.project__wrapper > h2 {
+  font-family: "PT Serif";
+  font-size: 30px;
+  color: #ff8400;
+}
+
+.project__image {
+  width: 80%;
+  position: relative;
+  border-radius: 16px;
+}
+
+.project__image > img {
+  width: 100%;
+  object-fit: contain;
+  cursor: pointer;
+  border-radius: 16px;
+  box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.5);
+}
+
+.project__image:hover .project__link {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.project__link {
+  display: none;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.6) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+
+  z-index: 10;
+  padding-bottom: 16px;
+  transition: all 5s ease;
+  border-radius: 16px;
+}
+
+.link {
+  font-family: "PT Serif";
+  font-size: 16px;
+  color: #fff;
+  z-index: 20;
+  cursor: pointer;
+  padding: 4px 24px;
+  background-color: #ff8400;
+  border-radius: 4px;
+  transition: all 500ms ease;
+}
+
+.link:hover {
+  opacity: 0.9;
+  color: #494545;
+}
+
+@media (max-width: 1100px) {
+  .project__image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .project__wrapper > h2 {
+    font-size: 25px;
+  }
+}
