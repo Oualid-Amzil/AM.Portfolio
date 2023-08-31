@@ -140,7 +140,7 @@ const ContactScreen = () => {
       <form
         ref={form}
         onSubmit={sendEmailHandler}
-        className="animate__animated animate__fadeInUp contact__form"
+        className="animate__animated animate__zoomInDown contact__form"
       >
         {success && (
           <span className="animate__animated animate__zoomIn success">
@@ -148,7 +148,7 @@ const ContactScreen = () => {
           </span>
         )}
 
-        <div className="contact__input">
+        <div className=" contact__input">
           <h2>Name</h2>
           <input
             value={nameState.value}

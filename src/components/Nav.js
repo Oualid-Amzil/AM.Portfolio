@@ -13,7 +13,7 @@ const Nav = () => {
   return (
     <div className="nav">
       <div className="nav__contents">
-        <div className="nav__logo">
+        <div className="animate__animated animate__wobble nav__logo">
           <h1 style={{ fontFamily: "PT Serif" }}>
             A.M{" "}
             <span style={{ color: "#fff", fontFamily: "PT Serif" }}>

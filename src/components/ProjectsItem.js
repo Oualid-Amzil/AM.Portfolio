@@ -6,8 +6,8 @@ import "animate.css";
 const ProjectsItem = ({ title, link, webImage }) => {
   return (
     <div className="  project__wrapper">
-      <h2 className="animate__animated animate__lightSpeedInLeft">{title}</h2>
-      <div className="animate__animated animate__lightSpeedInLeft project__image">
+      <h2 className="animate__animated animate__slideInLeft">{title}</h2>
+      <div className="animate__animated animate__slideInLeft project__image">
         <img src={webImage} alt="website" />
         <div className="animate__animated animate__fadeIn project__link">
           <a
