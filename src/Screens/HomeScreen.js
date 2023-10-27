@@ -5,7 +5,7 @@ import AboutScreen from "./AboutScreen";
 import ProjectsScreen from "./ProjectsScreen";
 import ContactScreen from "./ContactScreen";
 import NotFound from "./NotFound";
-import amImage from "../images/cropped-DSC_0156.JPG";
+import amImage from "../images/_DSC2067.second.jpg";
 import "animate.css";
 import "./HomeScreen.css";
 
