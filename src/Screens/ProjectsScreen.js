@@ -5,6 +5,7 @@ import ProjectsItem from "../components/ProjectsItem";
 import mvImage from "../images/Web capture_29-8-2023_103413_ra-netflix-clone.web.app.jpeg";
 import rcImage from "../images/Web capture_29-8-2023_155310_oualid-amzil.github.io.jpeg";
 import shImage from "../images/am-shop-capture.jpeg";
+import weatherImg from "../images/amweatherimage.jpeg";
 
 const ProjectsScreen = () => {
   return (
@@ -30,6 +31,11 @@ const ProjectsScreen = () => {
           title="AM Shop"
           webImage={shImage}
           link=" https://silver-arithmetic-d2e4d4.netlify.app"
+        />
+        <ProjectsItem
+          title="AM Weather"
+          webImage={weatherImg}
+          link=" https://oualid-amzil.github.io/AM.Weather/"
         />
       </div>
     </div>
